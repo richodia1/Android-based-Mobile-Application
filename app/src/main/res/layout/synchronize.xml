@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:background="@drawable/green">
+<LinearLayout android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:layout_gravity="center"
+              android:layout_centerHorizontal="true"
+              android:layout_centerVertical="true">
+        <TextView android:textSize="18dp"
+                  android:layout_height="25dp"
+                  android:layout_width="wrap_content"
+                  android:textStyle="bold"
+                  android:textColor="#ffffff"
+                  android:layout_marginLeft="10dp"
+                  android:text="Select Server: "/>
+        <RadioGroup
+            android:id="@+id/radioGroupServerType"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/radioTomcat1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tomcat 1 (Production Server)"
+                android:textSize="16dp"
+                android:button="@drawable/custom_radio_button"
+                android:buttonTint="#ffffff"
+                android:textColor="#ffffff"/>
+
+            <RadioButton
+                android:id="@+id/radioTomcat2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tomcat 2 (Testing Server)"
+                android:textSize="16dp"
+                android:layout_marginTop="-15dp"
+                android:button="@drawable/custom_radio_button"
+                android:buttonTint="#ffffff"
+                android:textColor="#ffffff"/>
+        </RadioGroup>
+
+    <Button
+        android:id="@+id/reinitialize_local_data"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/rounded_corner_button"
+        android:clickable="true"
+        android:textAllCaps="false"
+        android:text="Re-Initialize Local Data"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/upload_data_to_server"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rounded_corner_button"
+        android:clickable="true"
+        android:textAllCaps="false"
+        android:text="Upload Data To Server"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/download_data_from_server"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rounded_corner_button"
+        android:clickable="true"
+        android:textAllCaps="false"
+        android:text="Download Data From Server"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="18sp"/>
+</LinearLayout>
+    </RelativeLayout>

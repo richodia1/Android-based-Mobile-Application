@@ -1,0 +1,182 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="#387C44">
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+                  android:layout_centerHorizontal="true"
+                  android:layout_centerVertical="true">
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/logo"/>
+
+        <TextView android:id="@+id/lot_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="35dp"
+            android:text="TDr-1556"
+            android:textColor="#ffffff"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quantity:"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+            <TextView android:id="@+id/quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="20"
+                android:layout_marginLeft="10dp"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center"
+                      android:layout_marginTop="20dp"
+                      android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Scale:"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+            <TextView android:id="@+id/scale"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="Seed"
+                      android:layout_marginLeft="10dp"
+                      android:textColor="#ffffff"
+                      android:textSize="20sp"
+                      android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center"
+                      android:layout_marginTop="20dp"
+                      android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location:"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+            <TextView android:id="@+id/locationDetail"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="Field banks > Yam field bank"
+                      android:layout_marginLeft="10dp"
+                      android:textColor="#ffffff"
+                      android:textSize="20sp"
+                      android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center"
+                      android:layout_marginTop="20dp"
+                      android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Barcode:"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+            <TextView android:id="@+id/barcode"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="1256"
+                      android:layout_marginLeft="10dp"
+                      android:textColor="#ffffff"
+                      android:textSize="20sp"
+                      android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center"
+                      android:layout_marginTop="20dp"
+                      android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Version:"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+            <TextView android:id="@+id/version"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="1256"
+                      android:layout_marginLeft="10dp"
+                      android:textColor="#ffffff"
+                      android:textSize="20sp"
+                      android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center"
+                      android:layout_marginTop="20dp"
+                      android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Last Updated Date:"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+            <TextView android:id="@+id/lastUpdated"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="19-02-2016"
+                      android:layout_marginLeft="10dp"
+                      android:textColor="#ffffff"
+                      android:textSize="20sp"
+                      android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center"
+                      android:layout_marginTop="20dp"
+                      android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Last Updated By:"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+            <TextView android:id="@+id/lastUpdatedBy"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="OOyatomi"
+                      android:layout_marginLeft="10dp"
+                      android:textColor="#ffffff"
+                      android:textSize="20sp"
+                      android:textStyle="bold"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

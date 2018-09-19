@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dp" android:minHeight="?attr/actionBarSize"
+    android:background="#737CA1" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:src="@mipmap/logo"  />
+
+    <ImageView
+        android:id="@+id/actionbar_menu_drawer"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="60dp"
+        android:src="@drawable/ic_drawer"  />
+
+    <Button
+        android:id="@+id/actionbar_menu"
+        android:text="Menu"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:layout_marginLeft="45dp"
+        android:textAllCaps="false"
+        android:gravity="right|center_vertical" android:textSize="16dp"
+        android:layout_centerVertical="true"
+        android:textColor="#fff"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/actionbar_synchronize"
+        android:text="Synchronize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:layout_marginLeft="155dp"
+        android:layout_centerVertical="true"
+        android:gravity="right|center_vertical"
+        android:textColor="#fff"
+        android:textAllCaps="false"
+        android:textSize="17dp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/actionbar_all_lots"
+        android:text="All Lots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_centerVertical="true"
+        android:textColor="#fff"
+        android:textAllCaps="false"
+        android:textSize="17dp"
+        android:textStyle="bold"/>
+</RelativeLayout>

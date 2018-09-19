@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="com.iita.iitagenebank.AllFieldVariables">
+    <item android:id="@+id/action_record_field_variables"
+          android:title="Record Field Variable"
+          android:orderInCategory="1"
+          app:showAsAction="never"/>
+</menu>

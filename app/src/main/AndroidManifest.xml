@@ -1,0 +1,150 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.iita.iitagenebank">
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="22" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <supports-screens android:smallScreens="true" android:normalScreens="true"
+                      android:largeScreens="true" android:xlargeScreens="true" android:anyDensity="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Login"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainPage"
+            android:label="@string/title_activity_main_page" >
+        </activity>
+        <activity
+            android:name=".Settings"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".MainPage" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.iita.iitadatatool.MainPage" />
+        </activity>
+        <activity
+            android:name=".AboutApp"
+            android:label="@string/title_activity_about_app"
+            android:parentActivityName=".MainPage" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.iita.iitadatatool.MainPage" />
+        </activity>
+        <activity
+            android:name=".Synchronize"
+            android:label="@string/title_activity_synchronize"
+            android:parentActivityName=".MainPage" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.iita.iitadatatool.MainPage" />
+        </activity>
+        <activity
+            android:name=".AllLots"
+            android:label="@string/title_activity_all_lots"
+            android:parentActivityName=".MainPage" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.iita.iitadatatool.MainPage" />
+        </activity>
+        <activity
+            android:name=".LotDetail"
+            android:parentActivityName=".MainPage" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.iita.iitadatatool.MainPage" />
+        </activity>
+        <activity
+            android:name=".AllFieldVariables"
+            android:label="@string/title_activity_all_field_variables"
+            android:parentActivityName=".LotDetail" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.iita.iitadatatool.LotDetail" />
+        </activity>
+        <activity
+            android:name=".FieldVariableDetail"
+            android:label="@string/title_activity_field_variable_detail"
+            android:parentActivityName=".AllFieldVariables" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.iita.iitadatatool.AllFieldVariables" />
+        </activity>
+        <activity
+            android:name=".AllLotVariables"
+            android:label="@string/title_activity_all_lot_variables"
+            android:parentActivityName=".LotDetail" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.iita.iitadatatool.LotDetail" />
+        </activity>
+        <activity
+            android:name=".LotVariableDetail"
+            android:label="@string/title_activity_lot_variable_detail"
+            android:parentActivityName=".AllLotVariables" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.iita.iitadatatool.AllLotVariables" />
+        </activity>
+        <activity
+            android:name=".AllLotLists"
+            android:label="@string/title_activity_all_lot_lists"
+            android:parentActivityName=".MainPage" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.iita.iitadatatool.MainPage" />
+        </activity>
+        <activity
+            android:name=".AllLotListLots"
+            android:label="@string/title_activity_lot_list_lots"
+            android:parentActivityName=".AllLotLists" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.iita.iitadatatool.AllLotLists" />
+        </activity>
+        <activity
+            android:name=".LotMigrations"
+            android:label="@string/title_activity_lot_migrations"
+            android:parentActivityName=".LotDetail" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.iita.iitadatatool.LotDetail" />
+        </activity>
+        <activity
+            android:name=".AllLocations"
+            android:label="@string/title_activity_all_locations"
+            android:parentActivityName=".MainPage" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.iita.iitadatatool.MainPage" />
+        </activity>
+        <activity
+            android:name=".LotSubtypeTransactions"
+            android:label="@string/title_activity_lot_subtype_transactions"
+            android:parentActivityName=".LotDetail" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.iita.iitadatatool.LotDetail" />
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dp"
+    android:background="@drawable/greenbg">
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_centerHorizontal="true"
+                  android:layout_centerVertical="true"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Barcode:"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+        <EditText android:id="@+id/barcode"
+            android:layout_width="220dp"
+            android:layout_height="35dp"
+            android:paddingLeft="5dp"
+            android:inputType="number"
+            android:background="@drawable/editext_rounded_corner"/>
+        <LinearLayout android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="15dp"
+                      android:layout_gravity="center"
+                      android:orientation="horizontal">
+            <Button
+                android:id="@+id/scan_button"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:background="@drawable/rounded_corner_button"
+                android:clickable="true"
+                android:textAllCaps="false"
+                android:text="SCAN"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+            <Button
+                android:id="@+id/search_button"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/rounded_corner_button"
+                android:clickable="true"
+                android:textAllCaps="false"
+                android:text="SEARCH"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
